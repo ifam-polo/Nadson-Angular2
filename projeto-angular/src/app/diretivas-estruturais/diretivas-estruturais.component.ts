@@ -42,4 +42,10 @@ export class DiretivasEstruturaisComponent implements OnInit {
     public onClickAddList(){
       this.list.push({nome: 'Rosa', idade:22});
     }
+
+    public onClickEventList(Event:number){
+      this.list.splice(Event,1)
+
+    }
+
   }
