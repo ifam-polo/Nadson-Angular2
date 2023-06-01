@@ -26,6 +26,9 @@ export class DataBidingComponent {
   
     this.position.x = valor.offsetX;
     this.position.y = valor.offsetY;
+
   }
+
+
 
 }
