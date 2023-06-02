@@ -1,3 +1,5 @@
+<ng-content select="h1"></ng-content>
+
 <!--- <p [ngClass]="{'active':valor, 'disabled': !valor}">NgClass</p>
 <p [ngStyle]="{'heigth':heigthPx, 'backgroud':backgroudColor}>ngStyle</p>
 
@@ -10,7 +12,7 @@
 
 <hr> -->
 
-<ng-tamplete ngFor let-item [ngForof]="let item of list">
+<!--<ng-tamplete ngFor let-item [ngForof]="let item of list">
 
     <p>
         {{item.nome}}
@@ -19,3 +21,7 @@
 
 <input [{ngModel}]= "nome"> {{nome}}
 <button (click)="salvar()">salvar</button>
+
+<hr> -->
+
+<ng-content select="h1"></ng-content>
