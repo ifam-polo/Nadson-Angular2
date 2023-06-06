@@ -6,10 +6,14 @@ describe('TodoInputAddItensComponent', () => {
   let component: TodoInputAddItensComponent;
   let fixture: ComponentFixture<TodoInputAddItensComponent>;
 
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ TodoInputAddItensComponent ]
+    })
+    .compileComponents();
+  });
+
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [TodoInputAddItensComponent]
-    });
     fixture = TestBed.createComponent(TodoInputAddItensComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
