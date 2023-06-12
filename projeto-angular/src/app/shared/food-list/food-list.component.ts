@@ -9,10 +9,15 @@ import { FoodListService } from 'src/app/services/food-list.service';
 export class FoodListComponent implements OnInit{
   
   public foodList: Array<string>= [];
+  foodListService: any;
   constructor(private FoodListService: FoodListService){
     
   }
   ngOnInit(): void{
-    this.foodList = this.FoodListService.foodList();
+    this.foodList = this.foodListService.foodList();
+
+    this.foodListService.emitEvent.subscribe(;
+      res => alert('Você add =>${res} '));
   }
+
 }
