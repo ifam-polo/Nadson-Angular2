@@ -9,6 +9,8 @@ import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas
 import { DiretivasAtributosComponent } from './diretivas-atributos/diretivas-atributos.component';
 import { FoodListComponent } from './shared/food-list/food-list.component';
 import { FoodListService } from './services/food-list.service';
+import { FormsComponent } from './forms/forms.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { FoodListService } from './services/food-list.service';
     DiretivasAtributosComponent,
     FoodListComponent,
     FoodListService,
+    FormsComponent,
+    ReactiveFormsComponent,
   ],
   imports: [
     BrowserModule,

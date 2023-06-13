@@ -8,7 +8,7 @@ import { FoodListService } from 'src/app/services/food-list.service';
 })
 export class FoodListComponent implements OnInit{
   
-  public foodList: Array<string>= [];
+public foodList: Array<string>= [];
   foodListService: any;
   constructor(private FoodListService: FoodListService){
     
@@ -28,7 +28,16 @@ export class FoodListComponent implements OnInit{
   }
 )
 }
-  public foodListDelete(id: number){
+public foodEdit(value: string, id: number){
+  this.foodListService.foodListEdit(value, id).subscribe(
+    res => {
+      return console.log(res)
+    }
+    )
+
+}
+
+public foodListDelete(id: number){
     return this.foodListService.foodListDelete(id).subscribe(
       'res', => {
         this:this.foodList = this.foodList.filter(
