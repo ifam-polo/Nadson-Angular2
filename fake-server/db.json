@@ -1,18 +1,3 @@
 {
-    "list-food":[
-        {
-            "id":1,
-            "nome": "Lasanha"
-        },
-        {
-            "id":2,
-            "nome": "Macarronada"
-        },
-        {
-            "id":3,
-            "nome": "Feijoada"
-        }
-
-
-    ]
+    "list-food": []
 }
