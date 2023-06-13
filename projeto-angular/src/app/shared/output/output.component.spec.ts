@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PokeHeaderComponent } from './poke-header.component';
+import { OutputComponent } from './output.component';
 
-describe('PokeHeaderComponent', () => {
-  let component: PokeHeaderComponent;
-  let fixture: ComponentFixture<PokeHeaderComponent>;
+describe('OutputComponent', () => {
+  let component: OutputComponent;
+  let fixture: ComponentFixture<OutputComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PokeHeaderComponent ]
+      declarations: [ OutputComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PokeHeaderComponent);
+    fixture = TestBed.createComponent(OutputComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

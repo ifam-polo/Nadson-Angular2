@@ -14,10 +14,29 @@ export class FoodListComponent implements OnInit{
     
   }
   ngOnInit(): void{
-    this.foodList = this.foodListService.foodList();
+    this.foodListService.foodList().subscribe(
+      (      res: string[])=> this.foodList = res,
+      () => console.log(Error)
 
-    this.foodListService.emitEvent.subscribe(;
-      res => alert('Você add =>${res} '));
+    );
+    
+    this.foodListService.emitEvent.subscribe(
+
+      (      res: string) =>
+        { alert('Você add =>${res.nome} ');
+      return this.foodList.push(res);
   }
-
+)
+}
+  public foodListDelete(id: number){
+    return this.foodListService.foodListDelete(id).subscribe(
+      'res', => {
+        this:this.foodList = this.foodList.filter(
+          item =>{
+            return id !== item.id
+          }
+        )
+      },
+         
+  }
 }
